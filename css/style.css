@@ -41,14 +41,19 @@ body{
 }
 
 /* HERO */
+
+
 .hero{
-  height:65vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  background:linear-gradient(135deg,#0f9d58,#00c6ff);
-  position:relative;
+  background: url('images/Electronics development tools and solutions.png') no-repeat center center;
+  background: url('images/Onpower Technologies PCB solutions display.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 20px; /* mobile spacing */
 }
 
 .hero::after{
@@ -64,6 +69,7 @@ body{
 .hero-text{
   position:relative;
   z-index:2;
+margin-top: 100px;
 }
 
 .hero h1{

@@ -8,6 +8,53 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+<style>
+.hero{
+  background:url('images/Electronics development tools and solutions.png') no-repeat center/cover;
+background-size: cover;
+   min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-text{
+  position:relative;
+  z-index:2;
+}
+/* Mobile fix (no crop) */
+@media (max-width:768px){
+  .hero{
+    background-size: contain;
+    background-color: black;
+  }
+
+.btn-quote{
+  margin-top:20px;
+  padding:12px 25px;
+  background:#2b7bb9;
+  border:none;
+  border-radius:8px;
+}
+
+.btn-quote a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+
 </head>
 <body>
 
@@ -28,10 +75,8 @@
 <section class="hero">
   <div class="hero-text">
     <h1>Smart Power Solutions for a Connected Future</h1>
-<p>Modern Electronics | PCB Design | Embedded Systems</p>
-    <!--<button class="btn-quote">Get Quote</button>-->
-<button class="btn-quote"><a href="contact.html">Get Quote</a></button>
-
+    <p>Modern Electronics | PCB Design | Embedded Systems</p>
+    <button class="btn-quote"><a href="contact.html">Get Quote</a></button>
   </div>
 </section>
 
@@ -85,7 +130,6 @@
 </section>
 
 <footer>
-    <!--<p>© 2026 Onpower Technologies</p>-->
 	<p>Onpower Technologies</p>
 </footer>
 
