@@ -11,8 +11,7 @@
 <style>
 .hero{
   background:url('images/Electronics development tools and solutions.png') no-repeat center/cover;
-background-size: cover;
-   min-height: 100vh;
+  min-height: 100vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -33,13 +32,8 @@ background-size: cover;
   position:relative;
   z-index:2;
 }
-/* Mobile fix (no crop) */
-@media (max-width:768px){
-  .hero{
-    background-size: contain;
-    background-color: black;
-  }
 
+/* Button */
 .btn-quote{
   margin-top:20px;
   padding:12px 25px;
@@ -53,6 +47,14 @@ background-size: cover;
   text-decoration:none;
   font-weight:bold;
 }
+
+/* Mobile fix */
+@media (max-width:768px){
+  .hero{
+    background-size: contain;
+    background-color: black;
+  }
+}
 </style>
 
 </head>
@@ -60,9 +62,9 @@ background-size: cover;
 
 <header class="header">
   <div class="logo-box">
-  <img src="images/logo.png" alt="OnPower Logo">
-<h2 class="logo">Onpower Technologies</h2>
-</div>
+    <img src="images/logo.png" alt="OnPower Logo">
+    <h2 class="logo">Onpower Technologies</h2>
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="service.html">Services</a>
@@ -129,8 +131,80 @@ background-size: cover;
   </div>
 </section>
 
-<footer>
-	<p>Onpower Technologies</p>
+<!-- FOOTER -->
+<footer style="background:#111; color:#fff; padding:40px 20px; font-family:Arial, sans-serif; text-align:left;">
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between;">
+
+    <!-- Company Info -->
+    <div style="flex:1; min-width:220px;">
+      <h2 style="color:#2b7bb9; margin-bottom:10px;">Onpower Technologies</h2>
+      <p style="font-size:14px; line-height:1.6;">
+        We provide innovative embedded systems, PCB design, and smart power solutions for modern electronics.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex:1; min-width:150px;">
+      <h3 style="margin-bottom:10px;">Quick Links</h3>
+      <ul style="list-style-position:inside; padding:0; margin:0; font-size:14px; line-height:1.8;">
+        <li><a href="index.html" style="color:#ccc; text-decoration:none;">Home</a></li>
+        <li><a href="about.html" style="color:#ccc; text-decoration:none;">About</a></li>
+        <li><a href="service.html" style="color:#ccc; text-decoration:none;">Services</a></li>
+        <li><a href="contact.html" style="color:#ccc; text-decoration:none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div style="flex:1; min-width:180px;">
+      <h3 style="margin-bottom:10px;">Services</h3>
+      <ul style="list-style-position:inside; padding:0; margin:0; font-size:14px; line-height:1.8;">
+        <li>PCB Design</li>
+        <li>Embedded Systems</li>
+        <li>Firmware Development</li>
+        <li>Power Electronics</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex:1; min-width:200px;">
+      <h3 style="margin-bottom:10px;">Contact</h3>
+      <ul style="list-style-position:inside; padding:0; margin:0; font-size:14px; line-height:1.8;">
+<li>
+  <a href="https://wa.me/8810503192" target="_blank" style="color:inherit; text-decoration:none;">
+    <i class="fas fa-phone"></i>+91 8810503192 
+  </a>
+</li>
+<li>
+  <a href="https://wa.me/8476003531" target="_blank" style="color:inherit; text-decoration:none;">
+    <i class="fas fa-phone"></i>+91 8476003531 
+  </a>
+</li>
+
+<li>
+  <a href="mailto:contact@onpowertech.com" style="color:inherit; text-decoration:none;">
+    <i class="fas fa-envelope"></i> contact@onpowertech.com
+  </a>
+</li>
+        <li>
+ <a href="onpowertech.com" style="color:inherit; text-decoration:none;">
+<i class="fas fa-globe"></i> www.onpowertech.com</li>
+</a>
+      </ul>
+
+      <h3 style="margin-top:15px;">Follow Us</h3>
+      <div style="display:flex; gap:10px;">
+        <a href="#" style="color:#fff;"><i class="fab fa-facebook"></i></a>
+        <a href="#" style="color:#fff;"><i class="fab fa-linkedin"></i></a>
+        <a href="#" style="color:#fff;"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div style="text-align:center; margin-top:30px; font-size:13px; border-top:1px solid #333; padding-top:15px;">
+    © 2026 Onpower Technologies | All Rights Reserved
+  </div>
 </footer>
 
 <script src="js/main.js"></script>
