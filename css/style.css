@@ -117,6 +117,14 @@ nav a:not(.btn):hover{border-color:var(--line)}nav a[aria-current=page]{border-c
 .form label{display:block;font-weight:600;color:var(--ink);margin:1rem 0 .35rem}
 .form input,.form textarea{width:100%;font:inherit;padding:.75rem .9rem;border:1px solid #b7c4d6;border-radius:8px;background:#fff}
 .form .btn{margin-top:1.4rem}.err{color:#b42318;margin-top:.75rem;min-height:1.5em}
+.status-msg{margin-top:.85rem;min-height:1.5em;font-size:.95rem;font-weight:500;padding:.6rem .8rem;border-radius:6px;display:none}
+.status-msg.show{display:block}
+.status-msg.err{color:#b42318;background:#fee4e2;border:1px solid #fecdca}
+.status-msg.ok{color:#0e7a3f;background:#d1fadf;border:1px solid #a6f4c5}
+.status-msg.loading{color:var(--blue);background:#e6f1fa;border:1px solid #b9d9f2}
+.req{color:var(--orange)}
+.mt-sm{margin-top:.75rem}
+.empty-state{text-align:center;padding:2.5rem 1.5rem;color:var(--muted);background:var(--paper);border:1px dashed var(--line);border-radius:var(--r);grid-column:1/-1}
 .footer{background:var(--ink);color:#b9c8dc;padding:3.5rem 0 0;font-size:.95rem}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:2.5rem}
 .flogo{height:48px;width:auto;background:#fff;padding:6px 10px;border-radius:8px;margin-bottom:1rem}

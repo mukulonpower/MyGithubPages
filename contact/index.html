@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact | Onpower Technologies</title>
-        <meta name="description" content="Get a quote for your PCB & electronics project. Contact Onpower Technologies by phone, email or WhatsApp.">
-        <link rel="canonical" href="https://www.onpowertech.com/contact/">
-        <meta property="og:title" content="Contact | Onpower Technologies">
-        <meta property="og:description" content="Get a quote for your PCB & electronics project. Contact Onpower Technologies by phone, email or WhatsApp.">
+        <title>Contact & Request a Quote | Onpower Technologies</title>
+        <meta name="description" content="Get a quote for your PCB & electronics project. Contact Onpower Technologies by web form, email, or direct WhatsApp.">
+        <link rel="canonical" href="https://www.onpowertech.com/contact">
+        <meta property="og:site_name" content="Onpower Technologies">
+        <meta property="og:title" content="Contact & Request a Quote | Onpower Technologies">
+        <meta property="og:description" content="Get a quote for your PCB & electronics project. Contact Onpower Technologies by web form, email, or direct WhatsApp.">
         <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.onpowertech.com/contact">
         <meta property="og:image" content="https://www.onpowertech.com/images/bench.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Contact & Request a Quote | Onpower Technologies">
+        <meta name="twitter:description" content="Get a quote for your PCB & electronics project. Contact Onpower Technologies by web form, email, or direct WhatsApp.">
+        <meta name="twitter:image" content="https://www.onpowertech.com/images/bench.jpg">
         <meta name="theme-color" content="#0b1f3a">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,8 +23,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="/css/style.css">
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.onpowertech.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://www.onpowertech.com/contact"
+            }
+          ]
+        }
+        </script>
     </head>
     <body>
         <a class="skip" href="#main">Skip to content</a>
@@ -39,12 +65,36 @@
             </div>
         </header>
         <main id="main"><section class="band"><div class="wrap"><h1>Let’s Work Together</h1><p>Get a quote for your PCB & Electronics project</p></div></section><section class="sec"><div class="wrap split"><div><h2>Contact Info</h2><ul class="clist">
-<li><i class="fas fa-phone" aria-hidden="true"></i> +91 8810503192</li><li><i class="fas fa-phone" aria-hidden="true"></i> +91 8476003531</li>
+<li><a href="https://wa.me/918810503192" target="_blank" rel="noopener"><i class="fas fa-phone" aria-hidden="true"></i> +91 8810503192</a></li>
+<li><a href="https://wa.me/918476003531" target="_blank" rel="noopener"><i class="fas fa-phone" aria-hidden="true"></i> +91 8476003531</a></li>
 <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contact@onpowertech.com">contact@onpowertech.com</a></li><li><i class="fas fa-location-dot" aria-hidden="true"></i> India</li></ul>
 <a class="btn wa" href="https://wa.me/918810503192" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a></div>
-<form class="form" id="quote" novalidate><h2>Get Quote</h2><label for="name">Your Name</label><input id="name" name="name" autocomplete="name" required>
-<label for="email">Your Email</label><input id="email" type="email" name="email" autocomplete="email" required>
-<label for="msg">Your Requirement</label><textarea id="msg" rows="5"></textarea><p class="err" id="err" role="alert"></p><button class="btn" type="submit">Send Request</button></form></div></section></main><footer class="footer"><div class="wrap fgrid">
+<form class="form" id="quote" action="https://api.web3forms.com/submit" method="POST" novalidate>
+<h2>Get Quote</h2>
+<!-- Web3Forms Access Key: Insert your free access key from https://web3forms.com -->
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<!-- Spam honeypot -->
+<input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+<input type="hidden" name="subject" value="New Quote Request - Onpower Technologies">
+<input type="hidden" name="from_name" value="Onpower Technologies Website">
+
+<label for="name">Your Name <span class="req">*</span></label>
+<input id="name" name="name" autocomplete="name" required placeholder="John Doe">
+
+<label for="email">Your Email <span class="req">*</span></label>
+<input id="email" type="email" name="email" autocomplete="email" required placeholder="john@example.com">
+
+<label for="phone">Your Phone Number</label>
+<input id="phone" type="tel" name="phone" autocomplete="tel" placeholder="+91 9876543210">
+
+<label for="msg">Your Requirement <span class="req">*</span></label>
+<textarea id="msg" name="message" rows="5" required placeholder="Describe your circuit, PCB specs, or required quantities..."></textarea>
+
+<div id="form-status" role="alert" aria-live="polite" class="status-msg"></div>
+
+<button class="btn" type="submit" id="submit-btn">Send Request</button>
+<p class="muted mt-sm" style="font-size:0.9rem;">Prefer email? Reach us directly at <a href="mailto:contact@onpowertech.com">contact@onpowertech.com</a></p>
+</form></div></section></main><footer class="footer"><div class="wrap fgrid">
 <div><img class="flogo" src="/images/logo.png" alt="Onpower Technologies" width="150" height="55"><p>We provide innovative embedded systems, PCB design, and smart power solutions for modern electronics.</p></div>
 <div><h3>Quick Links</h3><ul><li><a href="/">Home</a></li><li><a href="/about">About</a></li><li><a href="/products">Products</a></li><li><a href="/services">Services</a></li><li><a href="/contact">Contact</a></li></ul></div>
 <div><h3>Services</h3><ul><li>PCB Design</li><li>Embedded Systems</li><li>Firmware Development</li><li>Power Electronics</li></ul></div>
